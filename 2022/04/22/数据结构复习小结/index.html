@@ -1,121 +1,38 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh">
 <head>
-  <meta charset="utf-8">
-  
-  
-  <title>data structure | Hexo</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="数据结构复习小结算法的渐近分析重要区别上限与最坏情况的区别： ​	（1）上限是用来确定运行时间的增长率，体现随着输入规模变化 算法的代价变化 ​	（2）最差情况是指：在一个给定的规模当中，所有可能的输入中最糟糕的情况。 ​		上限规模不定，最差情况规模确定 线性表链表 对单链表设置头指针的作用 1.简化插入删除的操作，首结点的删除不需要特殊的处理 2.统一了空表与非空表的操作  如何做到$O(1)">
-<meta property="og:type" content="article">
-<meta property="og:title" content="data structure">
-<meta property="og:url" content="http://example.com/2022/04/22/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%A4%8D%E4%B9%A0%E5%B0%8F%E7%BB%93/index.html">
-<meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="数据结构复习小结算法的渐近分析重要区别上限与最坏情况的区别： ​	（1）上限是用来确定运行时间的增长率，体现随着输入规模变化 算法的代价变化 ​	（2）最差情况是指：在一个给定的规模当中，所有可能的输入中最糟糕的情况。 ​		上限规模不定，最差情况规模确定 线性表链表 对单链表设置头指针的作用 1.简化插入删除的操作，首结点的删除不需要特殊的处理 2.统一了空表与非空表的操作  如何做到$O(1)">
-<meta property="og:locale" content="en_US">
-<meta property="og:image" content="d:/大二学习/数据结构/Typora_pic/QQ截图20211222133036.jpg">
-<meta property="og:image" content="d:/大二学习/数据结构/Typora_pic/QQ截图20211217165636.jpg">
-<meta property="og:image" content="d:/大二学习/数据结构/Typora_pic/QQ截图20211217165721.jpg">
-<meta property="og:image" content="d:/大二学习/数据结构/Typora_pic/QQ截图20211217165751.jpg">
-<meta property="og:image" content="d:/大二学习/数据结构/Typora_pic/QQ截图20211217170044.jpg">
-<meta property="og:image" content="d:/大二学习/数据结构/Typora_pic/QQ截图20211221211535.jpg">
-<meta property="og:image" content="d:/大二学习/数据结构/Typora_pic/QQ截图20211220132825.jpg">
-<meta property="og:image" content="d:/大二学习/数据结构/Typora_pic/QQ截图20211222165144.jpg">
-<meta property="og:image" content="d:/大二学习/数据结构/Typora_pic/QQ截图20211223152508.jpg">
-<meta property="og:image" content="d:/大二学习/数据结构/Typora_pic/QQ截图20211223152557.jpg">
-<meta property="og:image" content="d:/大二学习/数据结构/Typora_pic/QQ截图20211223153454.jpg">
-<meta property="og:image" content="d:/大二学习/数据结构/Typora_pic/QQ截图20211223161537.jpg">
-<meta property="og:image" content="d:/大二学习/数据结构/Typora_pic/QQ截图20211223161625.jpg">
-<meta property="og:image" content="d:/大二学习/数据结构/Typora_pic/QQ截图20211223165553.jpg">
-<meta property="article:published_time" content="2022-04-22T12:46:25.000Z">
-<meta property="article:modified_time" content="2022-04-24T09:37:06.513Z">
-<meta property="article:author" content="John Doe">
-<meta property="article:tag" content="PS3">
-<meta property="article:tag" content="Games">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="d:/大二学习/数据结构/Typora_pic/QQ截图20211222133036.jpg">
-  
-    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
-  
-  
-    <link rel="shortcut icon" href="/favicon.png">
-  
-  
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="google-site-verification" content="TZE0rZyIqLl10trYu3BWBWa1Vmz6HFwhb2OcNEK4u-s" />
+     <link rel="shortcut icon" href= /img/favicon.ico >
+    <title>
+        Computer learning materials
+    </title>
+    <meta name="description" content= 嘿，我是刘训灼～这是我的子站，用于展示写的Hexo主题：Coder。欢迎访问！ >
+    <meta name="keywords" content= Blog,Hexo,Theme,刘训灼,LiuXunzhuo >
     
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-source-code-pro@0.0.71/index.min.css">
+<link rel="stylesheet" href="/libs/highlight/styles/monokai-sublime.css">
 
-  
-  
+    
+<link rel="stylesheet" href="/libs/font-awesome/css/font-awesome.min.css">
+
+    
 <link rel="stylesheet" href="/css/style.css">
 
-  
-    
-<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
-
-  
 <meta name="generator" content="Hexo 6.1.0"></head>
-
-<body>
-  <div id="container">
-    <div id="wrap">
-      <header id="header">
-  <div id="banner"></div>
-  <div id="header-outer" class="outer">
-    <div id="header-title" class="inner">
-      <h1 id="logo-wrap">
-        <a href="/" id="logo">Hexo</a>
-      </h1>
-      
+<body id="bodyx">
+    <div class="hd posts">
+    <a href="/index.html"><i class="fa fa-home
+ replay-btn" aria-hidden="true"></i></a>
+    <div class="post-title">
+        <p>
+            data structure
+        </p>
+        <hr>
     </div>
-    <div id="header-inner" class="inner">
-      <nav id="main-nav">
-        <a id="main-nav-toggle" class="nav-icon"></a>
-        
-          <a class="main-nav-link" href="/">Home</a>
-        
-          <a class="main-nav-link" href="/archives">Archives</a>
-        
-      </nav>
-      <nav id="sub-nav">
-        
-          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
-        
-        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
-      </nav>
-      <div id="search-form-wrap">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://example.com"></form>
-      </div>
-    </div>
-  </div>
-</header>
-
-      <div class="outer">
-        <section id="main"><article id="post-数据结构复习小结" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2022/04/22/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%A4%8D%E4%B9%A0%E5%B0%8F%E7%BB%93/" class="article-date">
-  <time class="dt-published" datetime="2022-04-22T12:46:25.000Z" itemprop="datePublished">2022-04-22</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/Diary/">Diary</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 class="p-name article-title" itemprop="headline name">
-      data structure
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
+    <div class="post-content">
         <h1 id="数据结构复习小结"><a href="#数据结构复习小结" class="headerlink" title="数据结构复习小结"></a>数据结构复习小结</h1><h2 id="算法的渐近分析"><a href="#算法的渐近分析" class="headerlink" title="算法的渐近分析"></a>算法的渐近分析</h2><h3 id="重要区别"><a href="#重要区别" class="headerlink" title="重要区别"></a>重要区别</h3><p>上限与最坏情况的区别：</p>
 <p>​	（1）上限是用来确定运行时间的增长率，体现随着输入规模变化 算法的代价变化</p>
 <p>​	（2）最差情况是指：在一个给定的规模当中，所有可能的输入中最糟糕的情况。</p>
@@ -625,122 +542,58 @@
 <figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line"><span class="function">BSTNode* <span class="title">build</span><span class="params">(<span class="type">int</span>* pre,<span class="type">int</span>* in,<span class="type">int</span> len)</span></span>&#123;</span><br><span class="line">	<span class="keyword">if</span> (len&lt;<span class="number">1</span>) <span class="keyword">return</span> <span class="literal">NULL</span>;</span><br><span class="line">    BSTNode* root=pre[<span class="number">0</span>];</span><br><span class="line">    <span class="type">int</span> k=<span class="number">0</span>;</span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> i=<span class="number">0</span>;i&lt;len;i++)&#123;</span><br><span class="line">		<span class="keyword">if</span> (in[i]==pre[<span class="number">0</span>])&#123;</span><br><span class="line">			k=i;</span><br><span class="line">            <span class="keyword">break</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    root-&gt;left=<span class="built_in">build</span>(pre+<span class="number">1</span>,in,k);</span><br><span class="line">    root-&gt;right=<span class="built_in">build</span>(pre+k+<span class="number">1</span>;in+k+<span class="number">1</span>;len-k<span class="number">-1</span>);</span><br><span class="line">    <span class="keyword">return</span> root;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function">BSTNode* <span class="title">findLCA</span><span class="params">(BSTNode* root,data1,data2)</span></span>&#123;</span><br><span class="line">   <span class="keyword">if</span> (root-&gt;data==data1||root-&gt;data==data2)&#123;</span><br><span class="line">        <span class="keyword">return</span> root;</span><br><span class="line">    &#125;</span><br><span class="line">	<span class="type">bool</span> isleft_1=<span class="built_in">find</span>(root-&gt;left,data1);</span><br><span class="line">    <span class="type">bool</span> isleft_2=<span class="built_in">find</span>(root-&gt;left,data2);</span><br><span class="line">    <span class="comment">//首先判断它们是否都在左子树当中</span></span><br><span class="line">    <span class="keyword">if</span> (isleft_1&amp;&amp;isleft_2)&#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="built_in">findLCA</span>(root-&gt;left,data1,data2);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">if</span> (!isleft_1&amp;&amp;!isleft_2)&#123;</span><br><span class="line">		<span class="keyword">return</span> <span class="built_in">findLCA</span>(root-&gt;right,data1,data2);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">else</span>&#123;</span><br><span class="line">		<span class="keyword">return</span> root;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 
-      
     </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2022/04/22/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%A4%8D%E4%B9%A0%E5%B0%8F%E7%BB%93/" data-id="cl2d7w85x0000skvydhp87e0t" data-title="data structure" class="article-share-link">Share</a>
-      
-      
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Games/" rel="tag">Games</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/PS3/" rel="tag">PS3</a></li></ul>
 
-    </footer>
-  </div>
-  
     
-  
-</article>
-
-
-</section>
-        
-          <aside id="sidebar">
-  
+        <hr class="fhr">
+        <div id="vcomments"></div>
     
-  <div class="widget-wrap">
-    <h3 class="widget-title">Categories</h3>
-    <div class="widget">
-      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Diary/">Diary</a></li></ul>
-    </div>
-  </div>
+</div>
+    <div class="footer" id="footer">
+    <p><h4>Copyright © 2020 | Author: LiuXunzhuo | Theme By <a class="theme-author" target="_blank" rel="noopener" href="https://github.com/Xunzhuo/hexo-theme-coder" style="font-size:14px; color: #969696">Coder</a></h4>
+    <label class="el-switch el-switch-blue el-switch-sm" style="vertical-align: sub;">
+        <input type="checkbox" name="switch" id="update_style">
+        <span class="el-switch-style"></span>
+    </label>
+    <!--         <script type="text/javascript">
+    var cnzz_protocol = (("https:" == document.location.protocol) ? "https://" : "http://");
+    document.write(unescape("%3Cspan id='cnzz_stat_icon_1278548644'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "v1.cnzz.com/stat.php%3Fid%3D1278548644%26show%3Dpic1' type='text/javascript'%3E%3C/script%3E"));
+    </script> -->
+</p>
+</div>
+<input type="hidden" id="web_style" value="light">
+<input type="hidden" id="valine_appid" value="NOsswOncKgc8HOxqo9oxIWlX-gzGzoHsz">
+<input type="hidden" id="valine_appKey" value="z1FihjWEbS8uIfUQdmCtK7zz">
+
+<script src="/libs/jquery.min.js"></script>
 
 
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Tags</h3>
-    <div class="widget">
-      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Games/" rel="tag">Games</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/PS3/" rel="tag">PS3</a></li></ul>
-    </div>
-  </div>
+<script src="/libs/highlight/highlight.pack.js"></script>
 
+<script src='//cdn.jsdelivr.net/npm/valine@1.3.10/dist/Valine.min.js'></script>
 
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Tag Cloud</h3>
-    <div class="widget tagcloud">
-      <a href="/tags/Games/" style="font-size: 10px;">Games</a> <a href="/tags/PS3/" style="font-size: 10px;">PS3</a>
-    </div>
-  </div>
+<script src="/js/js.js"></script>
 
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Archives</h3>
-    <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/04/">April 2022</a></li></ul>
-    </div>
-  </div>
-
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Recent Posts</h3>
-    <div class="widget">
-      <ul>
-        
-          <li>
-            <a href="/2022/04/22/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%A4%8D%E4%B9%A0%E5%B0%8F%E7%BB%93/">data structure</a>
-          </li>
-        
-      </ul>
-    </div>
-  </div>
-
-  
-</aside>
-        
-      </div>
-      <footer id="footer">
-  
-  <div class="outer">
-    <div id="footer-info" class="inner">
-      
-      &copy; 2022 John Doe<br>
-      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
-    </div>
-  </div>
-</footer>
-
-    </div>
-    <nav id="mobile-nav">
-  
-    <a href="/" class="mobile-nav-link">Home</a>
-  
-    <a href="/archives" class="mobile-nav-link">Archives</a>
-  
-</nav>
-    
-
-
-<script src="/js/jquery-3.4.1.min.js"></script>
-
-
-
-  
-<script src="/fancybox/jquery.fancybox.min.js"></script>
-
-
-
-
-<script src="/js/script.js"></script>
-
-
-
-
-
-  </div>
+<style type="text/css">
+.v * {
+color: #698fca;
+}
+.v .vlist .vcard .vhead .vsys {
+color: #3a3e4a;
+}
+.v .vlist .vcard .vh .vmeta .vat {
+color: #638fd5;
+}
+.v .vlist .vcard .vhead .vnick {
+color: #6ba1ff;
+}
+.v a {
+color: #8696b1;
+}
+.v .vlist .vcard .vhead .vnick:hover {
+color: #669bfc;
+}
+</style>
+    <script type="text/javascript" color="173,174,173" opacity='1' zIndex="-2" count="99" src="//cdn.bootcss.com/canvas-nest.js/1.0.0/canvas-nest.min.js"></script>
 </body>
 </html>
